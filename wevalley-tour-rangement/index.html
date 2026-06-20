@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Notice d'utilisation — Tour de rangement 5 tiroirs · WeValley</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1c2024; --muted:#5b6470;
+    --line:#e6e9ee; --accent:#1f6feb; --accent-soft:#eaf2ff;
+    --warn-bg:#fff6e6; --warn-ink:#8a5a00; --warn-line:#ffd591;
+    --danger-bg:#fdeceb; --danger-ink:#9b1c12; --danger-line:#f5b7b1;
+    --ok-bg:#eaf7ee; --ok-ink:#1d6b35; --ok-line:#b7e2c4;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e1116; --card:#161b22; --ink:#e6edf3; --muted:#9aa4b2;
+      --line:#262d36; --accent:#4f93ff; --accent-soft:#16243d;
+      --warn-bg:#2a2410; --warn-ink:#ffd591; --warn-line:#5a4a16;
+      --danger-bg:#2c1614; --danger-ink:#ffb4ac; --danger-line:#5a2520;
+      --ok-bg:#10241a; --ok-ink:#9ee2b4; --ok-line:#1f4a31;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+    line-height:1.6; font-size:16px;
+  }
+  .wrap{max-width:780px; margin:0 auto; padding:18px 16px 64px}
+  header.top{
+    background:linear-gradient(135deg,#1f6feb,#3b82f6);
+    color:#fff; border-radius:var(--radius); padding:22px 20px; margin-bottom:18px;
+  }
+  header.top .brand{font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:.92; font-weight:700}
+  header.top h1{margin:6px 0 4px; font-size:22px; line-height:1.25}
+  header.top .sub{font-size:14px; opacity:.95}
+  header.top .ref{margin-top:12px; font-size:12.5px; opacity:.9; border-top:1px solid rgba(255,255,255,.25); padding-top:10px}
+  .langbar{display:flex; gap:8px; flex-wrap:wrap; margin:-6px 0 16px}
+  .langbar a{font-size:12.5px; color:var(--muted); text-decoration:none; border:1px solid var(--line); padding:4px 10px; border-radius:999px}
+  section{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 18px; margin-bottom:14px;
+  }
+  h2{font-size:17px; margin:0 0 12px; display:flex; align-items:center; gap:9px}
+  h2 .n{display:inline-flex; align-items:center; justify-content:center; width:25px; height:25px; border-radius:8px; background:var(--accent-soft); color:var(--accent); font-size:13px; font-weight:800; flex:none}
+  h3{font-size:14.5px; margin:16px 0 6px}
+  p{margin:8px 0}
+  ul,ol{margin:8px 0; padding-left:22px}
+  li{margin:5px 0}
+  table{width:100%; border-collapse:collapse; font-size:14.5px; margin:6px 0}
+  td,th{border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top}
+  th{background:var(--accent-soft); color:var(--accent); font-weight:700; width:42%}
+  .ph{background:#fff3cd; color:#7a5b00; border:1px dashed #d9a900; border-radius:6px; padding:1px 7px; font-size:12.5px; font-weight:700; white-space:nowrap}
+  @media (prefers-color-scheme: dark){.ph{background:#332a08; color:#ffd591; border-color:#7a6010}}
+  .block{border-radius:12px; padding:13px 15px; margin:11px 0; border:1px solid}
+  .block .bt{font-weight:800; display:flex; align-items:center; gap:8px; margin-bottom:5px; font-size:14.5px}
+  .danger{background:var(--danger-bg); color:var(--danger-ink); border-color:var(--danger-line)}
+  .warn{background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line)}
+  .ok{background:var(--ok-bg); color:var(--ok-ink); border-color:var(--ok-line)}
+  .danger .bt::before{content:"⚠"} .warn .bt::before{content:"⚠"} .ok .bt::before{content:"✔"}
+  .steps{counter-reset:s; list-style:none; padding-left:0}
+  .steps li{position:relative; padding:8px 0 8px 42px; border-bottom:1px dashed var(--line)}
+  .steps li:last-child{border-bottom:0}
+  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:0; top:7px; width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center}
+  .recyc{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+  .recyc svg{flex:none}
+  .infotri{border:2px solid var(--ink); border-radius:8px; padding:8px 12px; font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; line-height:1.4; max-width:340px}
+  footer{margin-top:22px; color:var(--muted); font-size:12.5px; text-align:center; line-height:1.7}
+  .pillrow{display:flex; gap:8px; flex-wrap:wrap; margin-top:4px}
+  .pill{font-size:12px; background:var(--accent-soft); color:var(--accent); border-radius:999px; padding:3px 11px; font-weight:600}
+  a{color:var(--accent)}
+  @media print{
+    body{background:#fff; font-size:12px}
+    .wrap{max-width:100%; padding:0}
+    section,header.top{break-inside:avoid; box-shadow:none}
+    .langbar{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">WeValley</div>
+    <h1>Tour de rangement plastique — 5 tiroirs à roulettes</h1>
+    <div class="sub">Notice d'utilisation et informations de sécurité</div>
+    <div class="ref">Référence&nbsp;: <strong>aaaoy62713</strong> &nbsp;·&nbsp; Meuble de rangement d'intérieur</div>
+  </header>
+
+  <div class="langbar">
+    <a>🇫🇷 Français</a>
+  </div>
+
+  <!-- 1. IDENTIFICATION -->
+  <section id="produit">
+    <h2><span class="n">1</span> Identification du produit</h2>
+    <table>
+      <tr><th>Désignation</th><td>Tour de rangement plastique à 5&nbsp;tiroirs, sur roulettes</td></tr>
+      <tr><th>Marque</th><td>WeValley</td></tr>
+      <tr><th>Référence</th><td>aaaoy62713</td></tr>
+      <tr><th>Code EAN / GTIN</th><td><span class="ph">À COMPLÉTER — code EAN (13 chiffres)</span></td></tr>
+      <tr><th>Matière</th><td>Polypropylène (PP)</td></tr>
+      <tr><th>Dimensions hors tout</th><td>70,5 × 35 × 26 cm (H × L × P)</td></tr>
+      <tr><th>Dimensions d'un tiroir</th><td>env. 10 × 30 × 24 cm</td></tr>
+      <tr><th>Coloris</th><td>Noir / Blanc</td></tr>
+      <tr><th>Usage</th><td>Rangement domestique en intérieur (chambre, salon, cuisine, salle de bain, bureau)</td></tr>
+    </table>
+    <div class="pillrow">
+      <span class="pill">5 grands tiroirs</span>
+      <span class="pill">Sur roulettes</span>
+      <span class="pill">Usage intérieur</span>
+    </div>
+  </section>
+
+  <!-- 2. COORDONNEES LEGALES -->
+  <section id="coordonnees">
+    <h2><span class="n">2</span> Fabricant &amp; personne responsable (UE)</h2>
+    <table>
+      <tr><th>Fabricant</th><td><span class="ph">À COMPLÉTER — nom du fabricant</span><br><span class="ph">À COMPLÉTER — adresse postale complète</span><br>Contact&nbsp;: <span class="ph">À COMPLÉTER — e-mail</span></td></tr>
+      <tr><th>Personne responsable dans l'UE<br><small>(Règlement UE 2019/1020 &amp; 2023/988)</small></th><td><span class="ph">À COMPLÉTER — nom / société</span><br><span class="ph">À COMPLÉTER — adresse postale dans l'UE</span><br>Contact&nbsp;: <span class="ph">À COMPLÉTER — e-mail</span></td></tr>
+    </table>
+    <p style="font-size:13px; color:var(--muted)">La personne responsable établie dans l'Union européenne est le point de contact pour les autorités de surveillance du marché.</p>
+  </section>
+
+  <!-- 3. SECURITE -->
+  <section id="securite">
+    <h2><span class="n">3</span> Consignes de sécurité — À LIRE AVANT UTILISATION</h2>
+
+    <div class="block danger">
+      <div class="bt">Risque de basculement / renversement</div>
+      <ul>
+        <li>Placez le meuble sur une surface <strong>plane, stable et horizontale</strong>.</li>
+        <li><strong>N'ouvrez qu'un seul tiroir à la fois</strong> : l'ouverture simultanée de plusieurs tiroirs peut déséquilibrer le meuble.</li>
+        <li>Ne vous appuyez pas, ne vous asseyez pas et ne montez jamais sur le meuble ou les tiroirs.</li>
+        <li>Ne tirez pas complètement un tiroir chargé hors de ses glissières.</li>
+        <li>Si le meuble est utilisé sur ses roulettes, immobilisez-le avant de le charger et ne le déplacez pas lorsqu'il est lourdement chargé.</li>
+        <li>Si vous superposez plusieurs modules, solidarisez-les entre eux et fixez l'ensemble au mur pour éviter tout basculement.</li>
+      </ul>
+    </div>
+
+    <div class="block warn">
+      <div class="bt">Charge maximale</div>
+      <p>Ne dépassez pas <span class="ph">À CONFIRMER — kg</span> par tiroir, ni <span class="ph">À CONFIRMER — kg</span> au total. Répartissez les charges de façon homogène et placez les objets les plus lourds dans les tiroirs du bas.</p>
+    </div>
+
+    <div class="block warn">
+      <div class="bt">Sécurité des enfants</div>
+      <ul>
+        <li>Tenez le produit et son emballage <strong>hors de portée des enfants</strong>.</li>
+        <li>Ce meuble n'est ni un jouet, ni un marchepied : les enfants ne doivent pas grimper dessus ni s'y suspendre.</li>
+      </ul>
+    </div>
+
+    <div class="block warn">
+      <div class="bt">Risque d'étouffement — emballage</div>
+      <p>Les sacs en plastique peuvent être dangereux. Pour éviter tout risque d'étouffement, tenez les sacs et films d'emballage <strong>hors de portée des bébés et des enfants</strong>. Ne les utilisez pas dans les berceaux, lits, poussettes ou parcs.</p>
+    </div>
+
+    <div class="block warn">
+      <div class="bt">Conditions d'utilisation</div>
+      <ul>
+        <li>Usage <strong>intérieur</strong> et domestique uniquement.</li>
+        <li>N'exposez pas le meuble à une chaleur excessive, à une flamme nue ni à un ensoleillement direct prolongé : le polypropylène peut se déformer ou se décolorer.</li>
+        <li>N'utilisez pas un produit endommagé, fissuré ou dont des pièces manquent.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. MONTAGE -->
+  <section id="montage">
+    <h2><span class="n">4</span> Contenu &amp; montage</h2>
+    <h3>Contenu de la boîte</h3>
+    <ul>
+      <li>1 structure / cadre de rangement</li>
+      <li>5 tiroirs</li>
+      <li>Roulettes (nombre selon le modèle)</li>
+      <li>Visserie et accessoires de montage (le cas échéant)</li>
+    </ul>
+    <h3>Étapes de montage</h3>
+    <ol class="steps">
+      <li>Déballez toutes les pièces et vérifiez-les à l'aide de la liste ci-dessus. Retirez les films de protection.</li>
+      <li>Retournez la structure. Insérez les roulettes dans les logements prévus à la base et vérifiez qu'elles sont bien fixées.</li>
+      <li>Remettez le meuble à l'endroit sur une surface plane et vérifiez qu'il est stable.</li>
+      <li>Insérez chaque tiroir dans ses glissières, face avant vers vous, puis poussez jusqu'à la butée.</li>
+      <li>Vérifiez le bon coulissement des tiroirs et la stabilité de l'ensemble avant la mise en charge.</li>
+    </ol>
+    <p style="font-size:13px; color:var(--muted)">Aucun outil électrique n'est nécessaire. Ne forcez pas lors de l'assemblage des pièces en plastique.</p>
+  </section>
+
+  <!-- 5. UTILISATION & ENTRETIEN -->
+  <section id="entretien">
+    <h2><span class="n">5</span> Utilisation &amp; entretien</h2>
+    <ul>
+      <li>Nettoyez avec un <strong>chiffon doux humide</strong> et un détergent neutre, puis essuyez.</li>
+      <li>N'utilisez pas de produits abrasifs, de solvants, d'alcool ni d'éponges grattantes.</li>
+      <li>Évitez le contact prolongé avec l'eau stagnante et les sources de chaleur.</li>
+      <li>Vérifiez périodiquement le bon état des roulettes et des glissières.</li>
+    </ul>
+  </section>
+
+  <!-- 6. RECYCLAGE -->
+  <section id="recyclage">
+    <h2><span class="n">6</span> Matériaux &amp; recyclage</h2>
+    <p>Produit en polypropylène (PP&nbsp;<strong>♷&nbsp;5</strong>), recyclable. En fin de vie, déposez-le dans la filière de recyclage appropriée ou en déchèterie. Ne le jetez pas avec les ordures ménagères.</p>
+    <div class="recyc">
+      <!-- Triman (représentation) -->
+      <svg width="62" height="62" viewBox="0 0 100 100" role="img" aria-label="Triman">
+        <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M50 14 a36 36 0 0 1 31.2 18"/>
+          <path d="M81.2 32 l1.6 -12 M81.2 32 l-11.5 4.2"/>
+          <path d="M86 56 a36 36 0 0 1 -31 30.8"/>
+          <path d="M55 86.8 l9.5 7.6 M55 86.8 l-2 -11.8"/>
+          <path d="M28 80 A36 36 0 0 1 16 36"/>
+          <path d="M16 36 l-7.8 9 M16 36 l11.4 4.4"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="50" cy="36" r="6.5"/>
+          <path d="M50 44 c-8 0 -13 4 -13 11 l4 0 c0 7 3 13 9 13 s9 -6 9 -13 l4 0 c0 -7 -5 -11 -13 -11z"/>
+        </g>
+      </svg>
+      <div class="infotri">
+        Éléments d'emballage à séparer et à déposer dans le bac de tri
+      </div>
+    </div>
+    <p style="font-size:13px; color:var(--muted); margin-top:10px">Logo Triman / Info-tri — représentation. Triez les éléments d'emballage (carton, films plastiques) selon les consignes locales.</p>
+  </section>
+
+  <!-- 7. CONFORMITE -->
+  <section id="conformite">
+    <h2><span class="n">7</span> Conformité &amp; garantie</h2>
+    <div class="block ok">
+      <div class="bt">Sécurité du produit</div>
+      <p>Ce produit relève du <strong>Règlement (UE) 2023/988</strong> relatif à la sécurité générale des produits (RSGP&nbsp;/&nbsp;GPSR). Le fabricant atteste qu'il est conçu pour être sûr dans des conditions d'utilisation normales ou raisonnablement prévisibles.</p>
+    </div>
+    <h3>Garantie</h3>
+    <p>Ce produit bénéficie de la <strong>garantie légale de conformité</strong> (articles L.217-3 et suivants du Code de la consommation), d'une durée de <strong>2 ans</strong>, ainsi que de la garantie relative aux défauts de la chose vendue.</p>
+    <p>Service après-vente&nbsp;: <span class="ph">À COMPLÉTER — e-mail / contact SAV</span></p>
+  </section>
+
+  <footer>
+    Notice d'utilisation — version 1.0 · 20/06/2026<br>
+    WeValley · Tour de rangement 5 tiroirs · Réf. aaaoy62713<br>
+    Document conforme au Règlement (UE) 2023/988 (sécurité générale des produits)
+  </footer>
+
+</div>
+</body>
+</html>
